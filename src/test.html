@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX URL Example</title>
+</head>
+<body>
+    <video id="preview"></video>
+    
+    <button id="capture">Capture</button>
+
+    <canvas id="output" style="display: none;"></canvas>
+
+    <img id="result">
+</body>
+<script>
+    const [preview, output, capture, result] = [document.getElementById('preview'),document.getElementById('output'),document.getElementById('capture'),document.getElementById('result')]
+
+    navigator.mediaDevices.getUserMedia({
+        Audio: false,
+        video: {
+            width: 1920,
+            height: 1080,
+        }
+    })
+    .then(stream =>{
+        preview.srcObject = stream;
+        preview.play()
+    })
+    .catch(error =>{
+        console.log(error);
+    })
+
+    capture.addEventListener('click', () => {
+        const context = output.getContext('2d');
+
+        output.width = 1080;
+        output.height = 1080;
+
+        context.drawImage(preview, 0,0, output.width, outerHeight);
+        result.src = output.toDataURL();
+    })
+</script>
+</html>

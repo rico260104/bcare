@@ -1,70 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BCare</title>
-    <link href="./output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <!-- pro awesome -->
-    <link
-      rel="stylesheet"
-      data-purpose="Layout StyleSheet"
-      title="Web Awesome"
-      href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"
-    />
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>BCare</title>
+      <link href="output.css" rel="stylesheet" />
+      <link rel="shortcut icon" href="logo.JPG" />
+      <link rel="manifest" href="manifest.json">
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      />
+      <!-- pro awesome -->
+      <link
+        rel="stylesheet"
+        data-purpose="Layout StyleSheet"
+        title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"
+      />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+      />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+      />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+      />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+      />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
-  </head>
-  <body class="bg-red-500 relative">
-    <h1>New Articles</h1>
-    <div class="article px-2">
-      <div
-        class="w-full h-full"
-        style="background-image: url('./article-1.jpeg');"
-      ></div>
-    </div>
-    <nav class="bg-white flex justify-center fixed bottom-0 left-0 right-0">
-      <a
-        class="w-1/4 border-t-2 border-black flex justify-center items-center py-4"
-        href=""
-        ><i class="fa-regular fa-house"></i
-      ></a>
-      <a class="w-1/4 flex justify-center items-center" href=""
-        ><i class="fa-light fa-clipboard"></i
-      ></a>
-      <a class="w-1/4 flex justify-center items-center" href=""
-        ><img class="w-4 inline" src="coach.png" alt="coach"
-      /></a>
-      <a class="w-1/4 flex justify-center items-center" href=""
-        ><img class="w-4 inline" src="care.png" alt="care"
-      /></a>
-    </nav>
-  </body>
-</html>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+      />
+    </head>
+    <body class=" bg-slate-100 relative">
+      <div x-data="{ MD: window.innerWidth > 767 }" :class="{'hidden': MD, '': !MD}" class="con ">
+
+        <nav class="bg-white flex justify-between px-4 fixed top-0 left-0 right-0">
+          <div class="flex justify-start">
+            <a class="py-2" href="">
+              <div
+                class="rounded-2xl bg-cover bg-center w-8 h-8"
+                style="background-image: url('./logo.JPG')"
+              ></div>
+            </a>
+          </div>
+          <div class="w-1/4 flex items-center justify-evenly">
+            <i class="fa-regular fa-magnifying-glass"></i>
+            <i class="fa-light fa-bell"></i>
+            <i class="fa-light fa-location-dot"></i>
+          </div>
+        </nav>
+    
+        <div class="content relative mt-16">
+          <h1 class="ml-3 mb-2">New Articles</h1>
+          <div class="article flex overflow-x-auto px-2">
+            <a href="kekerasan-seksual.html">
+              <div
+                class="border-2 mr-4 rounded-2xl bg-cover bg-center h-sc-25 min-w-48"
+                style="background-image: url('./kekerasan-seksual.png')"
+              ></div>
+            </a>
+            <div
+              class="border-2 mr-4 rounded-2xl bg-cover bg-center h-sc-25 min-w-48"
+              style="background-image: url('./remaja.png')"
+            ></div>
+            <div
+              class="border-2 mr-4 rounded-2xl bg-cover bg-center h-sc-25 min-w-48"
+              style="background-image: url('./article-1.jpeg')"
+            ></div>
+            <div
+              class="border-2 mr-4 rounded-2xl bg-cover bg-center h-sc-25 min-w-48"
+              style="background-image: url('./article-1.jpeg')"
+            ></div>
+          </div>
+          <h1 class="ml-3 mt-5 mb-2">New Videos</h1>
+          <div class="article flex overflow-x-auto px-2">
+            <div
+              class="border-2 mr-4 rounded-2xl bg-cover bg-center h-sc-25 min-w-48"
+              style="background-image: url('./tangkal.jpeg')"
+            ></div>
+            <div
+              class="border-2 mr-4 rounded-2xl bg-cover bg-center h-sc-25 min-w-48"
+              style="background-image: url('./sex-education.jpeg')"
+            ></div>
+            <div
+              class="border-2 mr-4 rounded-2xl bg-cover bg-center h-sc-25 min-w-48"
+              style="background-image: url('./article-1.jpeg')"
+            ></div>
+            <div
+              class="border-2 mr-4 rounded-2xl bg-cover bg-center h-sc-25 min-w-48"
+              style="background-image: url('./article-1.jpeg')"
+            ></div>
+          </div>
+        </div>
+        
+        <navbar class="bg-white flex justify-center fixed bottom-0 left-0 right-0">
+          <a
+            class="w-1/4 border-t-2 border-black flex justify-center items-center py-4"
+            href=""
+            ><i class="fa-regular fa-house"></i
+          ></a>
+          <a class="w-1/4 flex justify-center items-center" href=""
+            ><i class="fa-light fa-clipboard"></i
+          ></a>
+          <a class="w-1/4 flex justify-center items-center" href=""
+            ><img class="w-5 inline" src="coach.png" alt="coach"
+          /></a>
+          <a class="w-1/4 flex justify-center items-center" href=""
+            ><img class="w-5 inline" src="care.png" alt="care"
+          /></a>
+        </navbar>      
+      </div>  
+
+      <div x-data="{ SM: window.innerWidth < 767 }" :class="{'hidden': SM, '': !SM}" class="flex flex-col items-center">
+        <img class="w-1/4" src="logo.JPG" alt="" />
+        <h1 class="text-7xl text-center">Your Device not Support!</h1>
+        <h1 class="text-xl font-bold">Only Support Phone!</h1>
+      </div>
+      <script>
+        if ('serviceWorker' in navigator) {
+	  window.addEventListener('load', function() {
+	    navigator.serviceWorker.register('sw.js').then(function(registration) {
+	      // Registration was successful
+	      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	    }, function(err) {
+	      // registration failed :(
+	      console.log('ServiceWorker registration failed: ', err);
+	    });
+	  });
+	}
+      </script>
+    </body>
+  </html>

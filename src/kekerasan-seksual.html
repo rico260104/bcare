@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCare</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+    <!-- pro awesome -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+  </head>
+  <body class=" bg-slate-100 relative ">
+    <div x-data="{ MD: window.innerWidth > 767 }" :class="{'hidden': MD, '': !MD}" class="con">
+        <div
+        class="content relative mx-5 my-7 flex flex-col items-center overflow-y-auto"
+      >
+        <h1 class="text-xl font-bold mb-3">
+          Contoh kekerasan seksual pada remaja
+        </h1>
+        <div class="flex mb-3">
+          <a href="">
+            <div
+              class="rounded-2xl bg-cover bg-center w-7 h-7"
+              style="background-image: url('./logo.JPG')"
+            ></div>
+          </a>
+          <h1 class="ml-3 font-semibold">Bcare</h1>
+          <p class="ml-3">24 Juni 2024</p>
+        </div>
+        <img class="w-3/4" src="kekerasan-seksual.png" alt="" />
+        <div class="artikel mt-3">
+            <p>
+              Seorang remaja perempuan berumur 12 tahun dengan inisial P menjadi
+              korban kekerasan seksual oleh dua temannya dan seorang pria paruh baya
+              berumur 42 tahun dengan inisial B di kawasan Pekapuran, Depok.</p><br><p>Kepala
+              Satuan Reserse Kriminal Polres Metro Depok, AKBP Yogen Heroes Baruno,
+              mengungkapkan bahwa kejadian tersebut terjadi pada Kamis, 22 September
+              2022, saat P dan teman-temannya sedang bermain di suatu tempat.</p><br><p>Di
+              lokasi tersebut, dua temannya dan pria paruh baya tersebut memberikan
+              minuman keras dan obat-obatan kepada P. Meskipun P menolak minuman yang
+              diberikan, ia akhirnya tidak dapat menghindar dan terpaksa mengonsumsi
+              minuman dan obat tersebut.</p><br><p>Setelah tidak sadarkan diri, P merasakan ada
+              yang menurunkan celananya, dan setelah sadar, P menemukan bekas
+              kekerasan seksual pada tubuhnya. Hasil visum juga mengkonfirmasi adanya
+              insiden tersebut.</p><br><p>Polisi telah memeriksa tujuh saksi dalam kasus ini
+              termasuk P dan ibunya. Identitas pelaku utama yang diduga melakukan
+              pemerkosaan terhadap P juga telah dikantongi oleh polisi dan mereka
+              berharap dapat menangkapnya dalam beberapa hari mendatang.
+            </p>
+        </div>
+      </div>
+  
+      <navbar class=" bg-white flex justify-center fixed bottom-0 left-0 right-0">
+        <a
+          class="w-1/4 border-t-2 border-black flex justify-center items-center py-4"
+          href=""
+          ><i class="fa-regular fa-house"></i
+        ></a>
+        <a class="w-1/4 flex justify-center items-center" href=""
+          ><i class="fa-light fa-clipboard"></i
+        ></a>
+        <a class="w-1/4 flex justify-center items-center" href=""
+          ><img class="w-5 inline" src="coach.png" alt="coach"
+        /></a>
+        <a class="w-1/4 flex justify-center items-center" href=""
+          ><img class="w-5 inline" src="care.png" alt="care"
+        /></a>
+      </navbar>
+    </div>    
+    <div x-data="{ SM: window.innerWidth < 767 }" :class="{'hidden': SM, '': !SM}" class="flex flex-col items-center">
+        <img class="w-1/4" src="logo.JPG" alt="">
+        <h1 class="text-7xl text-center">Your Device not Support! </h1>
+        <h1 class="text-xl font-bold">Only Support Phone! </h1>
+    </div>
+  </body>
+</html>
