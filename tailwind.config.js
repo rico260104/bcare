@@ -11,7 +11,10 @@ module.exports = {
       },
       width: {
         'sc-50': '50vw',
-      }
+      },
+      aspectRatio: {
+        '9/16': '9 / 16',
+      },
     },
   },
   plugins: [],

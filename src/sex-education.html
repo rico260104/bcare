@@ -45,21 +45,6 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
     />
-    <style>
-      .video-container {
-          position: relative;
-          width: 100%;
-          height: 0;
-          padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      }
-      .video-container iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-      }
-  </style>
   
   </head>
   <body class="bg-slate-100 relative">
@@ -83,7 +68,7 @@
           <p class="ml-3">24 Juni 2024</p>
         </div>
        
-          <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/PGsYLsb4xdM?si=4TjVWQclgZLoRTxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/PGsYLsb4xdM?autoplay=1&si=4TjVWQclgZLoRTxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        
         <h1 class="text-xl font-bold mt-3">
           Sex Education? Apa manfaatnya untuk dipelajari sejak dini (Bukan Hal Tabu!)
@@ -121,25 +106,4 @@
       <h1 class="text-xl font-bold">Only Support Phone!</h1>
     </div>
   </body>
-  <script>
-    document.addEventListener("fullscreenchange", adjustVideoSize);
-    document.addEventListener("webkitfullscreenchange", adjustVideoSize);
-    document.addEventListener("mozfullscreenchange", adjustVideoSize);
-    document.addEventListener("MSFullscreenChange", adjustVideoSize);
-
-    function adjustVideoSize() {
-        var video = document.getElementById("youtube-video");
-
-        if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
-            // Fullscreen mode
-            video.style.width = "100vw";
-            video.style.height = "100vh";
-        } else {
-            // Exit fullscreen mode
-            video.style.width = "100%";
-            video.style.height = "100%";
-        }
-    }
-</script>
-
 </html>
